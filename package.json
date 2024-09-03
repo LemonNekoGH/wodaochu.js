@@ -1,0 +1,35 @@
+{
+  "name": "@lemonneko/wodaochu.js",
+  "type": "module",
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.4.0+sha256.b6fd0bfda555e7e584ad7e56b30c68b01d5a04f9ee93989f4b93ca8473c49c74",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "bin": {
+    "wodaochu": "dist/index.js"
+  },
+  "scripts": {
+    "build:npm": "tsup --no-config src/index.ts --minify --format esm",
+    "build:image": "tsup",
+    "lint": "eslint --fix"
+  },
+  "dependencies": {
+    "mdast-builder": "^1.1.1",
+    "mdast-util-gfm": "^3.0.0",
+    "mdast-util-math": "^3.0.0",
+    "mdast-util-to-markdown": "^2.1.0",
+    "unist-builder": "^4.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.0.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/mdast": "^4.0.4",
+    "@types/node": "20",
+    "eslint": "^9.9.1",
+    "tsup": "^8.2.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
